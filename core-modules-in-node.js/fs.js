@@ -5,7 +5,7 @@ const fs = require('fs');
 fs.writeFileSync('myfile.txt', 'Hello programmers');//works synchronusly
 fs.appendFileSync('myfile.txt', ' How are you?');
 const content = fs.readFileSync('myfile.txt');
-console.log(content);//it returns butter (binery data types)
+console.log(content);//it returns butter which represent binary data in byte.
 console.log(content.toString());
 
 //but we need to handle the file system asynchronusly and non-blocking ways majorly.
