@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
             body.push(chunk);
         })
         req.on('end', () => {
-            //when the data streaming is finished the this event will be fired.
+            //when the data streaming is finished this event will be fired.
             console.log('stream finished');
             const parsedBody = Buffer.concat(body).toString();
             console.log(parsedBody);
